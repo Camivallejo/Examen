@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alegría - Música & Emociones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chartist@0.11.4/dist/chartist.min.css">
+
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+        }
+        header {
+            background-color: #ff4632;
+            color: black;
+            padding: 0.5em 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.5em;
+            color: black;
+            font-weight: bold;
+        }
+        .content {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .content h2 {
+            font-size: 2.5em;
+            color: #ff4632;
+            margin-top: 20px;
+        }
+        .content p {
+            font-size: 1.2em;
+            font-weight: lighter;
+            line-height: 1.5;
+            max-width: 800px;
+            margin: 0 auto;
+            color: white;
+        }
+        .content p1 {
+            font-size: 1em;
+            font-weight: lighter;
+            line-height: 1;
+            max-width: 600px;
+            margin: 0 auto;
+            color: white;
+        }
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+        }
+        .ct-chart {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .ct-series-a .ct-point, .ct-series-a .ct-line {
+            stroke: #1db954;
+        }
+        .ct-series-b .ct-area {
+            fill: rgba(29, 185, 84, 0.1);
+        }
+        .ct-axis.ct-horizontal .ct-grid, .ct-axis.ct-vertical .ct-grid {
+            stroke: #ffffff; 
+        }
+        .ct-label {
+            fill: #ffffff; 
+            color: #ffffff; 
+        }
+        .ct-series-a .ct-area {
+            fill: rgba(29, 185, 84, 0.5); 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <h1>MÚSICA & EMOCIONES</h1>
+        </a>
+    </header>
+
+     <figure class="mt-5 mx-2"> 
+        <img id="ira" src="https://raw.githubusercontent.com/Camivallejo/Examen/main/iraa.jpg" class="pt-3" alt="Imagen de Ira">
+    </figure>
+
+    <div class="container-fluid content">
+        <h2>IRA</h2>
+        <p>La música, con su capacidad única para evocar emociones profundas. Entre sus muchas facetas, la alegría se destaca como una fuerza que eleva el espíritu humano y contagia sonrisas. Los criterios permiten identificar patrones y características musicales que no solo reflejan la experiencia de la alegría.</p>
+
+        <div class="row justify-content-center">
+            <div class="col-md-9">
+                <div class="card my-2 shadow-sm text-center" style="background-color: #262626;">    
+                    <div class="card-header " style="background-color: #262626">
+                        <p>Popularidad de canciones <strong>ALEGRES</strong> de cada año</p>
+                    </div>
+                    <div class="card-body" style="background-color: #262626;"></div>
+                    <div class="ct-chart ct-chart-a ct-major-twelfth"></div>
+                </div>
+                <div class="align text-center">
+                    <p1 class="text-center"> 
+                        La evolución de la música alegre a lo largo de las décadas se refleja vívidamente en la fluctuación de su popularidad. Desde los movimientos explosivos de las décadas anteriores hasta las fusiones contemporáneas.
+                    </p1>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="card my-2 shadow-sm text-center" style="background-color: #262626;">    
+                    <div class="card-header" style="background-color: #262626">
+                        <p>Cantidad de <strong>GÉNEROS</strong> involucrados en la emoción</p>
+                    </div>
+                    <div class="card-body" style="background-color: #262626;"></div>
+                    <div class="ct-chart ct-chart-b ct-major-twelfth"></div>
+                </div>
+                <div class="align text-center">
+                    <p1 class="text-center">
+                        La diversidad de géneros musicales que contribuyen a la emoción de la alegría es un testimonio de la riqueza y la adaptabilidad del arte musical.
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="card my-2 shadow-sm text-center" style="background-color: #262626;">    
+                    <div class="card-header" style="background-color: #262626">
+                        <p>Relación entre <strong>ENERGY & VALENCE</strong> de la música alegre</p>
+                    </div>
+                    <div class="card-body" style="background-color: #262626;"></div>
+                    <div class="ct-chart ct-chart-c ct-major-twelfth"></div>
+                </div>
+                <div class="align text-center">
+                    <p1 class="text-center">
+                        En la intersección de la energía y la valencia yace un mapa emocional que traza los altibajos de nuestra percepción musical a lo largo del tiempo.
+                    </p1>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="card my-2 shadow-sm text-center" style="background-color: #262626;">    
+                    <div class="card-header" style="background-color: #262626">
+                        <p>Cantidad de canciones con <strong>CONTENIDO EXPLICITO Y SIN CONTENIDO EXPLICITO</strong> involucrados en la emoción alegre en cada año</p>
+                    </div>
+                    <div class="card-body" style="background-color: #262626;"></div>
+                    <div class="ct-chart ct-chart-d ct-major-twelfth"></div>
+                </div>
+                <div class="align text-center">
+                    <p1 class="text-center"> 
+                        Este análisis arroja luz sobre cómo la creatividad musical ha navegado entre los límites de la expresión libre y las sensibilidades sociales a lo largo de las décadas.
+                    </p1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartist@0.11.4/dist/chartist.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist-plugin-legend.min.js"></script>
+
+        <script>
+document.addEventListener('DOMContentLoaded', function() {
+    Papa.parse("https://raw.githubusercontent.com/Camivallejo/Examen/main/DATASET_SPOTIFY.csv", {
+        download: true,
+        header: true,
+        dynamicTyping: true,
+        complete: function(results) {
+            const csvData = results.data;
+            console.log(csvData);
+
+                            console.log(csvData);  
+
+                    const emotion = {
+                        "emocion": "alegría",
+                        "danceability": 669,
+                        "energy": 700,
+                        "key": 6,
+                        "loudness": -5.698,
+                        "mode": 1,
+                        "speechiness": 35.17,
+                        "acousticness": 161,
+                        "instrumentalness": 0.000019,
+                        "liveness": 286,
+                        "valence": 679,
+                        "tempo": 137.071
+                    };
+
+
+                    const thresholds = {
+                        danceability: 200,
+                        energy: 150,
+                        key: 7,
+                        loudness: 10,
+                        mode: 1,
+                        speechiness: 150,
+                        acousticness: 150,
+                        instrumentalness: 0.15,
+                        liveness: 150,
+                        valence: 150,
+                        tempo: 40
+                    };
+
+            let relatedSongs = csvData.filter(song => {
+                return Object.keys(emotion).every(key => {
+                    if (key !== 'emocion') {
+                        return Math.abs(parseFloat(song[key]) - emotion[key]) < thresholds[key];
+                    }
+                    return true;
+                });
+            });
+
+            console.log("Related songs:", relatedSongs);
+
+            const popularityByYear = {};
+            relatedSongs.forEach(song => {
+                const year = song.year.toString();
+                if (!popularityByYear[year]) {
+                    popularityByYear[year] = [];
+                }
+                popularityByYear[year].push(song.popularity);
+            });
+
+            const labels1 = Object.keys(popularityByYear);
+            const series1 = labels1.map(year => {
+                const popularityValues = popularityByYear[year];
+                const sum = popularityValues.reduce((acc, val) => acc + val, 0);
+                return sum / popularityValues.length; // Promedio de popularidad por año
+            });
+
+            new Chartist.Line('.ct-chart-a', {
+                labels: labels1,
+                series: [series1]
+            }, {
+                showPoint: true,
+                axisX: {
+                    title: {
+                        text: 'Año'
+                    }
+                },
+                axisY: {
+                    title: {
+                        text: 'Popularidad Promedio'
+                    }
+                }
+            });
+
+            const genreCounts = {};
+            relatedSongs.forEach(song => {
+                const genres = song.genre.split(',');
+                genres.forEach(genre => {
+                    genre = genre.trim();
+                    if (!genreCounts[genre]) {
+                        genreCounts[genre] = 0;
+                    }
+                    genreCounts[genre]++;
+                });
+            });
+
+            const labels2 = Object.keys(genreCounts);
+            const series2 = [Object.values(genreCounts)];
+
+            new Chartist.Bar('.ct-chart-b', {
+                labels: labels2,
+                series: series2
+            }, {
+                seriesBarDistance: 15,
+                axisX: {
+                    offset: 60,
+                    title: 'Género'
+                },
+                axisY: {
+                    offset: 80,
+                    title: 'Cantidad'
+                }
+            });
+
+            const sortedRelatedSongs = relatedSongs.sort((a, b) => a.energy - b.energy);
+            const labels3 = sortedRelatedSongs.map(song => song.energy.toString());
+            const series3 = [sortedRelatedSongs.map(song => song.valence)];
+            console.log("Related songs:", relatedSongs);
+
+            new Chartist.Line('.ct-chart-c', {
+                labels: labels3,
+                series: series3
+            }, {
+                showLine: false,
+                axisX: {
+                    title: {
+                        text: 'Energy'
+                    }
+                },
+                axisY: {
+                    title: {
+                        text: 'Valence'
+                    }
+                }
+            });
+
+            const yearData = {};
+            relatedSongs.forEach(song => {
+                const year = song.year;
+                const explicit = song.explicit==="VERDADERO" ? 'Verdadero' : 'Falso';
+                if (!yearData[year]) {
+                    yearData[year] = { Verdadero: 0, Falso: 0 };
+                }
+                yearData[year][explicit]++;
+            });
+
+            const labels4 = Object.keys(yearData).sort();
+            const seriesVerdadero = [];
+            const seriesFalso = [];
+            console.log("Related songs:", relatedSongs);
+
+            labels4.forEach(year => {
+                seriesVerdadero.push(yearData[year].Verdadero);
+                seriesFalso.push(yearData[year].Falso);
+            });
+
+            new Chartist.Bar('.ct-chart-d', {
+                labels: labels4,
+                series: [
+                    {name: 'Explícito', data: seriesVerdadero},
+                    {name: 'No Explícito', data: seriesFalso}
+                ]
+            }, {
+                seriesBarDistance: 15,
+                stackBars: false,
+                axisX: {
+                    offset: 60,
+                    title: 'Año'
+                },
+                axisY: {
+                    offset: 80,
+                    title: 'Cantidad de Canciones'
+                }
+            });
+
+        },
+        error: function(error) {
+            console.error('Error al cargar el archivo CSV:', error);
+        }
+    });
+});
+
+        </script>
+    </div>
+</body>
+</html>
